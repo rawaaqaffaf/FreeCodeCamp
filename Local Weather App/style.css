@@ -1,0 +1,13 @@
+.container {
+
+	background-color : #AED6F1;
+	font-family: sans-serif;
+}
+
+button {
+
+	background-color: #F1C40F;
+	border: 1px solid #EC7063;
+	padding : 10px;
+
+}

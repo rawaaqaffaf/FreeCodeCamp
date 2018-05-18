@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Search Wikipedia
+    </title>
+	
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>	
+<script type="text/javascript" src="wikipedia.js"></script>
+  </head>
+  
+  <body>
+
+      <h3>Do you want to do your wiki Search</h3>
+	  <input id = "search-term" type="text" name="search" placeholder="Search Wiki..">
+	  <div id = "search-results"></div>
+	  <h3>Click here for a random article...</h3>
+	  <button id ="random-article">Click Here to Get a random article</button>
+       	  
+  </body>
+
+  
+
+  
+<style>
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 25%;
+}
+
+h4, h3
+{
+  color : black;
+}
+
+body 
+{
+  background-color : #fff;
+}
+
+button
+{
+  margin : 5px;
+  position : relative;
+}
+
+div 
+  {
+    margin : 10px;
+    color : #000;
+    text-align : center;
+  }
+  
+</style>
+  
+</html>  
