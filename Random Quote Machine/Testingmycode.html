@@ -7,17 +7,33 @@
       Testing code
     </title>
 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
-  </head>
-  
-  <body>
-  <script type="text/javascript" src="source.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-      <h4>Do you want to get a random quote? Click here</h4>
-      <button id = "button">Click me to get a quote</button>
-      <div id ="quote"></div>
-	  <div id ="author"></div>
-	  <a id = "tweet_btn" class="twitter-share-button" data-show-count="false" data-text="whatever bull shit we want to share">Tweet</a>
+  </head>
+   
+  <body> 
+  <script type="text/javascript" src="source.js"></script>
+<div class= "container">
+     
+<div class="card bg-dark text-white">
+  <img class="card-img" src="https://static1.squarespace.com/static/5ab008d6697a9880a9f8c364/t/5abc6961aa4a99a0ab790df2/1522693072256/background-for-quotes-5.jpg" alt="Card image">
+  <div class="card-img-overlay">
+  	<h5 class="card-title">Quote of the day!</h5>
+    <blockquote class="blockquote mb-0">
+    <p id ="quote" class="card-text"></p>
+    <p id ="author" class="card-text"></p>
+    <button id = "quote_button" type="button" class="btn btn-secondary" >Click me to get a quote</button>
+  <a id = "tweet_btn" ><button type="button" class="btn btn-secondary">
+Tweet the quote </button>
+</a> 
+  </div>
+      </blockquote>
+  </div>
+</div>
+
+</div>
 	  
   </body>
 
@@ -26,28 +42,35 @@
   
 <style>
 
-h4 
+h5
 {
   color : white;
+  padding : 100px;
+  font-weight: bold;
 }
 
-body 
-{
-  background-color : #f87777;
+.card-text {
+ color : white;
+ font-weight: bold;
 }
 
-button
-{
-  margin : 5px;
-  position : relative;
-}
+button {
 
+	display: inline;
+}
 div 
   {
-    margin : 10px;
+    margin : 40px;
     color : #000;
     text-align : center;
   }
+
+ header { 
+ 	margin-top: 30px;
+ 	padding: 20px;
+
+  }
+
   
 </style>
   
