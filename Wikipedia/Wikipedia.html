@@ -7,38 +7,51 @@
       Search Wikipedia
     </title>
 	
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>	
-<script type="text/javascript" src="wikipedia.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   </head>
   
   <body>
+<script type="text/javascript" src="wikipedia.js"></script>
+<div class="container">
+	 <h3>Click here for a random article...</h3>
+	  <a id ="random-article">
+	  <button class="btn btn-primary" >Click Here to Get a random article</button></a>
 
       <h3>Do you want to do your wiki Search</h3>
-	  <input id = "search-term" type="text" name="search" placeholder="Search Wiki..">
-	  <div id = "search-results"></div>
-	  <h3>Click here for a random article...</h3>
-	  <button id ="random-article">Click Here to Get a random article</button>
-       	  
+	 
+<form id ="wikisearch" class="form-inline ">
+    <input id = "search-term" class="form-control mr-sm-2" type="search" placeholder="Search wiki" aria-label="Search">
+    <button  id = "get-search-results" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+<div id="search-result">
+	</div>
+</div>  
   </body>
 
   
 
   
 <style>
-input[type=text] {
-    width: 130px;
+input[type=search] {
+    width: 200px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+input[type=search]:focus {
     width: 25%;
 }
 
 h4, h3
 {
   color : black;
+  padding : 20px;
 }
 
 body 
@@ -52,6 +65,10 @@ button
   position : relative;
 }
 
+#wikisearch {
+display: inline;
+
+}
 div 
   {
     margin : 10px;
