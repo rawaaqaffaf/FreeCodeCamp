@@ -1,0 +1,17 @@
+#main
+{
+text-align: center;
+margin: 20px;
+background-color: #ffebcd;
+font-family:Roboto;
+  color: #5db5a4;
+}
+
+#image
+{
+	max-width: 100%;
+	height: auto;
+	display : block;
+  padding-left: 250px;
+}
+
