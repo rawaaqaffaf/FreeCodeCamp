@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link text="stylesheet" href="survey-form.css">
+</head>
+
+<body>
+<h1 id="title">
+Would you kindly fill out this cool survey?
+</h1>
+
+
+<p id="description">In this form you will lanswer questions about!</p>
+<form id="survey-form">
+    <label id="name-label" >Name :
+    	<input type="text" id="name" placeholder ="Enter Name">
+    </label> <br>
+	<label id="email-label" >Email:
+	<input type="email" id="email" placeholder="Enter Email">
+</label><br>
+<label id="number-label"> Number:
+	<input type="number" id="number" min="1" max="10" placeholder="1 to 10">
+</label>
+<br>
+<select name="cars" id="dropdown">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+
+<label for="meal">
+	<input type="radio" name="meal" value="meat">meat<br>
+	<input type="radio" name="meal" value="seafood">Sea Food<br>
+	<input type="radio" name="meal" value="Vegetables">Veggies<br>
+	</label>
+<br>
+<input type="checkbox" name="airplane" value="airbus">airbus
+<input type="checkbox" name="airplane" value="B777">B777
+<input type="checkbox" name="airplane" value="B787">B787
+
+<br>
+<textarea name="comments" rows="10" cols="30">
+Add your comment here!
+</textarea>
+<br>
+
+<button  id="submit" type="submit">Submit</button>
+
+
+
+</form>
+
+
+
+
+
+</body>
+
+</html>
